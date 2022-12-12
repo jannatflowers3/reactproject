@@ -1,0 +1,35 @@
+@media  only screen and (max-width:992px) {
+.clock_wrapper{
+    justify-content: center;
+
+}
+.clock_data h1{
+    font-size: 18px!important;
+}
+.clock_data h3{
+    font-size: 16px!important;
+}
+.clock_wrapper{
+    margin-left: 30px;
+}
+
+.clock_top_content{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.clock_top_content h4{
+    font-size: 22px!important;
+} 
+.clock_top_content h3{
+    font-size:22px!important;
+}
+.store_btn {
+ 
+    display: inline-block;
+}
+.count_down{
+    text-align: center;
+}
+
+}
+

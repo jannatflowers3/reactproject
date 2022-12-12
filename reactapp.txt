@@ -1,0 +1,68 @@
+1  ...## 
+ npx create-react-app reactjsbootstrapmodal
+
+npm i bootstrap@5
+npm i reactstrap
+
+npm start
+
+import index.js
+
+import 'bootstrap/dist/css/bootstrap.css';
+
+
+src->component->ModalComponents.js
+
+data transfer by axios####
+npm i axios
+
+
+########## 6/12/22 ##########
+1.  npx create-react-app react_loginauth
+
+2 .  npm install react-router-dom
+3 .  src/components/Dashboard
+     src/components/Preferences
+
+##########app.js ######
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import React,{ useState } from 'react';
+
+
+########### express server install korte hobe ######## database ar moto data thakar jonno
+npm install --save-dev express cors
+
+
+
+product searching $##########
+
+const [searchTerm,setSearchTerm] = useState([])
+const handleSearch = (event) => {
+  setSearchTerm(event.target.value);};
+
+const searchedProduct = product.filter((pr)=>
+pr.name.toLowerCase().includes(searchTerm.toLowerCase()))
+
+
+label htmlFor="search">Search: </label>
+      <input id="search" type="text" onChange={handleSearch} name="searchTerm"/>
+
+<tbody>
+          {searchedProduct.map((item, index) => (
+            <tr key={item.id}>
+              <td>{index + 1}</td>
+              <td>{item.name}</td>
+              <td>{item.details}</td>
+              <td>{item.price}</td>
+              <td>
+                <Link
+                  to={`/products/edit/${item.id}`}
+                  className="btn btn-primary"
+                >
+                  Edit
+                </Link>
+                <button onClick={() => delconfirm(item.id)}>Delete</button>
+              </td>
+            </tr>
+          ))}
+        </tbody>

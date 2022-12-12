@@ -1,0 +1,32 @@
+
+npx create-react-app registration_login
+npm install react-router-dom
+npm i axios
+import {  BrowserRouter as  Router Route,Routes } from 'react-router-dom';
+
+axios
+
+Header.js
+Login.js
+Register.js
+Home.js
+
+
+
+
+<Router>
+
+    <Header />
+
+     <Routes>
+        <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+             
+      </Routes>
+    
+      <Footer />
+    </Router>
+
+
+Tutorial Rays

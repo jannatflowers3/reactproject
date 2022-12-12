@@ -1,0 +1,149 @@
+.header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+.nav_wraper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+}
+.logo img{
+    width: 1.5rem;
+    height: 35px;
+}
+.logo h1{
+    font: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+    margin-bottom: 0;
+}
+.nav_item a{
+    color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav_icon{
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+.nav_icon span i{
+    font-size: 1.4rem;
+    color: var(--primary-color);
+cursor: pointer;
+}
+.cart_icon, .fav_icon{
+    position:relative;
+}
+.badge{
+   position: absolute;
+   top: 20%;
+   right:-15%;
+   width: 15px;
+   height: 15px;
+   content: '';
+   background-color: var(--primary-color);
+   color: #fff;
+   border-radius: 50px;
+   display: flex;
+   justify-content: center;
+   font-size: 0.7rem;
+   font-weight: 600;
+   z-index: 10;
+}
+.nav_icon span img{
+    width: 30px;
+    height: 30px;
+cursor: pointer;
+margin-bottom: 14px;
+}
+.mobile_menu{
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    display: none;
+}
+.nav_active{
+    font-weight: 600!important;
+}
+.sticky_header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 3px 3px 8px -3px #ddd;
+    background: var(--card-bg-01);
+    background-color: #fff;
+}
+@media  only screen and (max-width:768px) {
+    .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;height: 100%;
+        background: rgb(0, 0, 0,0.53);
+        z-index: 999;
+        display:none;
+    }
+    .menu{
+       position: absolute;
+       top: 0;
+       right: 0;
+       width: 250px;
+       height: 100%; 
+       background: #fff;
+       z-index: 9999;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .active_menu{
+        display: block;
+
+    }
+    .mobile_menu{
+     display: block;
+    }
+.mobile_menu span i{
+    font-size: 18px!important;
+}
+    .logo h1{
+        font-size: 16px;
+    }
+    .logo img{
+      width: 18px;
+      height: 18px;
+    }
+    .logo h1{
+        font-size: 17px;
+    }
+    .fav_icon i, 
+    .cart_icon i{
+        font-size: 18px!important;
+    }
+    .nav_icon span img{
+        width: 25px;
+        height: 25px;
+    }
+    .header{
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+    }
+
+
+}
